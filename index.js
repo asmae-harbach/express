@@ -6,6 +6,7 @@ const port = 5000;
 
 app.set('view engine', 'jade') ;
 app.set('views','./views') ;
+app.use('/public', express.static('./public'));
 
 
 const myLogger = function (req, res, next) {
